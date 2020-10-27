@@ -40,7 +40,7 @@ while counter>0:
     if verifyWord() is not True:
         counter-=1
 
-    system('cls')
+    #system('cls')
 
     if checkIfWin() is True:
         break
