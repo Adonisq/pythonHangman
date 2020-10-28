@@ -31,8 +31,10 @@ def verifyWord():
 while counter>0:
 
     print('\n')
+
     print("tries left: " + str(counter))
     printWord()
+
     print('\n')
 
     guessedWord = input('give a one letter of secret word: ').upper()
@@ -40,15 +42,13 @@ while counter>0:
     if verifyWord() is not True:
         counter-=1
 
-    #system('cls')
+    system('cls')
 
     if checkIfWin() is True:
         break
 
 
-if checkIfWin() is True:
-    print('you won! The full word is: ' + word)
-
+if checkIfWin() is True: print('you won! The full word is: ' + word)
 else: print("you loose! The full word is: " + word)
 
 
